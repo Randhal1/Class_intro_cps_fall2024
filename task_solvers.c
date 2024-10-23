@@ -14,15 +14,13 @@
 
 // Define a function to compute main function 
 double fun(double a){
-    double f = pow(a, 6)-a-1;
-    return f; 
+    return (pow(a, 6)-a-1);
 }// End pointer
 
 
 // Define a function to compute the first derivative of the given function
 double dfun(double a){
-    double df = 6*pow(a, 5)-1;
-    return df; 
+    return (6*pow(a, 5)-1);
 }// End pointer
 
 
@@ -44,21 +42,24 @@ double bisection(double a, double b){
 	    b = c;
 	    c = (a+b)/2;
 
-	} else if (abs(fun(c)) <= eps) {
+	}
+
+	
+	if (fabs(fun(c)) < eps) {
 	    break;
 
-	} else if (abs(fun(c)-fun(b)) <= eps) {
+	} /*else if (fabs(fun(c)-fun(b)) < eps) {
 	    break;
 
-	} else if (abs(fun(c)-fun(a)) <= eps) {
+	} else if (fabs(fun(c)-fun(a)) < eps) {
 	    break;
-	}// End if
+	}// End if*/
 	
 	q+=1;
 
     }// End for
 
-    printf("Function x^6-x-1 solved using bisection algorithm \n answer = %lf in %d steps.\n", c, q);
+    printf("Function x^6-x-1 solved using bisection algorithm \n answer = %.8lf in %d steps.\n", c, q);
 
 }// End pointer
 
@@ -76,38 +77,75 @@ double newrap(double a){
 	c = c - fun(c)/dfun(c);
 	q+=1;
 
-	if (abs(fun(c)) <= eps){
+	if (fabs(fun(c)) < eps){
 	    break;
 	}// End if
 	    
 
     }// End for
 
-    printf("Function x^6-x-1 solved using Newton-Raphson algorithm \n answer = %lf in %d steps.\n", c, q);
+    printf("Function x^6-x-1 solved using Newton-Raphson algorithm \n answer = %.8lf in %d steps.\n", c, q);
 
 }// End pointer
 
 
+// Define a secant method function.
+double secant(double x0, double x1){
 
+    double eps = 0.000001; 
+    double x2 = x1 - fun(x1)*((x1-x0)/(fun(x1)-fun(x0)));
+
+    int q = 0;
+
+    for (int i = 0; i < 50; i++){
+
+	q+=1;
+
+	if (fabs(fun(x2)) < eps){
+	    break;
+	}// End if
+	
+	x0 = x1;
+	x1 = x2;
+	x2 = x2 = x1 - fun(x1)*((x1-x0)/(fun(x1)-fun(x0)));
+	    
+
+    }// End for
+
+    printf("Function x^6-x-1 solved using secant algorithm \n answer = %.8lf in %d steps.\n", x2, q);
+
+}// End pointer
+
+
+// Define a secant method function.
+double secant(double x0, double x1){
+
+    double eps = 0.000001; 
+    double x2 = x1 - fun(x1)*((x1-x0)/(fun(x1)-fun(x0)));
+
+    int q = 0;
+
+    for (int i = 0; i < 50; i++){
+
+	q+=1;
+
+	if (fabs(fun(x2)) < eps){
+	    break;
+	}// End if
+	
+	x0 = x1;
+	x1 = x2;
+	x2 = x2 = x1 - fun(x1)*((x1-x0)/(fun(x1)-fun(x0)));
+	    
+
+    }// End for
+
+    printf("Function x^6-x-1 solved using secant algorithm \n answer = %.8lf in %d steps.\n", x2, q);
+
+}// End pointer
 int main()
 {
-    /*double a = fun(1);
-    printf("function at: %lf", a);*/
-
-    //double a = fun(-1);
     bisection(-1,0);
     newrap(-0.5);
-    //printf("%lf", a);
-
-    /*
-    int input;
-
-    printf( "1. Play game\n" );
-    printf( "2. Load game\n" );
-    printf( "3. Play multiplayer\n" );
-    printf( "4. Exit\n" );
-    printf( "Selection: " );
-    scanf( "%d", &input );
-    switch ( input ) {
-    */
+    secant(-1,0);
 }
