@@ -5,7 +5,7 @@ double secant(double x0, double x1){
 
     int q = 0;
 
-    for (int i = 0; i < 50; i++){
+    for (int i = 0; i < M; i++){
 
 	q+=1;
 

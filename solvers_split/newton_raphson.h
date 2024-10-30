@@ -5,7 +5,7 @@ double newrap(double a){
 
     int q = 0;
 
-    for (int i = 0; i < 50; i++){
+    for (int i = 0; i < M; i++){
 
 	c = c - fun(c)/dfun(c);
 	q+=1;

@@ -3,6 +3,7 @@
 #include<math.h>
 
 #define eps 0.000001 
+#define M 50
 
 #include"functions.h"
 #include"bisection.h"

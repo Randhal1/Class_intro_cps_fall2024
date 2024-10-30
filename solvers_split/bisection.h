@@ -5,7 +5,7 @@ double bisection(double a, double b){
 
     int q = 0;
 
-    for (int i = 0; i < 50; i++){
+    for (int i = 0; i < M; i++){
     	
 	if (fun(c)*fun(b) < 0){
 	    a = c;

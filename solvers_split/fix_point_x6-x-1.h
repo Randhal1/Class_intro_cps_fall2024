@@ -5,7 +5,7 @@ double fixpoint(double x0){
 
     int q = 0;
 
-    for (int i = 0; i < 50; i++){
+    for (int i = 0; i < M; i++){
 
 	q+=1;
 
