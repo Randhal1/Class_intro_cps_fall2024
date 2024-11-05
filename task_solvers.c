@@ -121,7 +121,7 @@ double secant(double x0, double x1){
 double fixpoint(double x0){
 
     double eps = 0.000001; 
-    double x1 = pow(x0, 6)-1;
+    double x1 = 1/(pow(x0,5)-25);
 
     int q = 0;
 
@@ -135,7 +135,6 @@ double fixpoint(double x0){
 	
 	x0 = x1;
 	x1 = pow(x0, 6)-1;
-	    
 
     }// End for
 
@@ -162,9 +161,9 @@ int main()
 	    secant(-1,0);
 	    break;
 	case 4:
-	    fixpoint(-0.5);
+	    fixpoint(0.5);
 	    break;
 	default:
-	    newrap(-0.5);}
+	    newrap(2);}
 
 }
