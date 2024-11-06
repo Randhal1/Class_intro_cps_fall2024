@@ -9,6 +9,15 @@
  * }
  */
 
+int requal(int value1, int value2){
+	if(value1 != value2){
+		return 0;}
+	else{
+		return 1;
+		}	
+}//end func
+
+/*
 int unique(int *arr, int size){
 	
 	int uqty = 1;
@@ -26,6 +35,7 @@ int unique(int *arr, int size){
 	return uqty;
 
 }//end func
+*/
 
 int main(){
 
@@ -41,7 +51,7 @@ int main(){
 		}//j-loop
 	}//i-loop*/
 	 
-	printf("%d", unique(array, size));
+	printf("%d \n", requal(2,2));
 
 	return 0; 
 }
