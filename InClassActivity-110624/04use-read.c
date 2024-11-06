@@ -2,6 +2,8 @@
 #include<math.h>
 #include<stdlib.h>
 
+// Return the magnitude of the sum of all elements of an array
+// when a substatraction is done
 int ArrayLess(int arr[], int size, int compare)
 {
     int low[size];
@@ -100,7 +102,7 @@ int main()
 	
 	// We can then write the following code
 	
-	float median = 59.5; //x[findMinimum(std,20)]; //This code need revision. 
+	//float median = 59.5; //x[findMinimum(std,20)]; //This code need revision. 
 
 	double collections[20]; 
 
@@ -113,7 +115,7 @@ int main()
 
 	// Print the results 
 	printf(" the average score is: %lf \n", avg);
-	printf(" the median score is : %f \n", median);
+	//printf(" the median score is : %f \n", median);
 	printf(" the mode score is   : %d \n", mode);
 	printf(" the std is	     : %lf \n", sstd);
 }
