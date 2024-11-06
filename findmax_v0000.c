@@ -1,15 +1,14 @@
 #include<stdio.h>
 
 // Function to find the maximum value in an array
-
-void findMaximum(int *arr)
+int findMaximum(int arr[], int lenght)
 {
     // Assume the first element is the maximum
     int max = arr[0];
     int index;
 
     // Loop through the array to find the maximum
-    for (long i = 1; i < sizeof(arr)/sizeof(arr[0]); i++) {
+    for (long i = 1; i < lenght; i++) {
         if (arr[i] > max) {
             // Update maximum if a smaller element is found
             max = arr[i];
@@ -20,10 +19,10 @@ void findMaximum(int *arr)
     return index;
 }
 
+
 int main() {
 
-	int array[5] = {0, 5, 7, 6, 4};
-
-	printf("%d \n", array[findMaximum(array)]);	
-	printf("%ld \n", sizeof(array)/sizeof(int));
+	int array[] = {0, 5, 1, 7, 4, 2};
+	int lenght = *(&array + 1)-array;
+	printf("The maximum is %d \n", array[findMaximum(array, lenght)]);
 }
