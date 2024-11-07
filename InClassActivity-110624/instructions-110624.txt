@@ -1,0 +1,13 @@
+
+Question1: Download buggy code buggy-temp.c and fix the bugs and upload into your repository the correct version call it lastname_ques1.c.
+
+Question2: Download avg.c and answer the following questions related to this code.
+a. What does this code do? Please provide your answer in the BB space provided.
+b. Calculate the mean, mode and standard deviation for the scores of the students. Call the code lastname_ques2.c. For the mode calculation assume that the given array has exactly one mode.
+Question3: Use file-reader.c, scores-data.txt and other codes provided to calculate the mean, mode and standard deviation for the scores of 20 students. Call the code  lastname_ques3.c. For the mode calculation assume that the given array has exactly one mode.
+
+Question4: Write a C program for determining the maximum of 10 integers using arrays and/or pointers.
+Call it lastname_ques4.c and upload it in your repository.
+Place all these codes in your repository.
+In your BB submission, please provide the exact link to your repository.
+

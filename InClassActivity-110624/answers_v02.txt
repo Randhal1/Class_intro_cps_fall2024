@@ -1,0 +1,83 @@
+Link to Github repo:
+
+https://github.com/Randhal1/Class_intro_cps_fall2024/tree/main/InClassActivity-110624
+
+Download avg.c and answer the following questions related to this code.
+
+a. What does this code do?
+This code firstly declares the values of the array "x" of lenght 5 and after that prints the cumulative sum
+of the elements, finishing by printing the average of the elements in the array "x"
+
+b. Calculate the mean, mode and standard deviation for the scores of the students.
+
+Results of the program:
+##############################################################
+ for i = 0, sum = 10.000000
+  for i = 1, sum = 17.000000
+  for i = 2, sum = 22.000000
+  for i = 3, sum = 31.000000
+  for i = 4, sum = 41.000000
+  the average score is: 8.200000
+ the median score is : 9
+ the mode score is : 10
+ the std is         : 1.939072
+##############################################################
+
+3. Use remirez_ques3.c to calculate the mean median mode and standard deviation for the scores of 20 students.
+
+Results of the program:
+##############################################################
+
+We just read 10 
+We just read 15 
+We just read 20 
+We just read 100 
+We just read 60 
+We just read 75 
+We just read 29 
+We just read 69 
+We just read 91 
+We just read 56 
+We just read 89 
+We just read 40 
+We just read 98 
+We just read 45 
+We just read 60 
+We just read 78 
+We just read 59 
+We just read 11 
+We just read 0 
+We just read 90 
+ for i = 0, sum = 10.000000 
+  for i = 1, sum = 25.000000 
+  for i = 2, sum = 45.000000 
+  for i = 3, sum = 145.000000 
+  for i = 4, sum = 205.000000 
+  for i = 5, sum = 280.000000 
+  for i = 6, sum = 309.000000 
+  for i = 7, sum = 378.000000 
+  for i = 8, sum = 469.000000 
+  for i = 9, sum = 525.000000 
+  for i = 10, sum = 614.000000 
+  for i = 11, sum = 654.000000 
+  for i = 12, sum = 752.000000 
+  for i = 13, sum = 797.000000 
+  for i = 14, sum = 857.000000 
+  for i = 15, sum = 935.000000 
+  for i = 16, sum = 994.000000 
+  for i = 17, sum = 1005.000000 
+  for i = 18, sum = 1005.000000 
+  for i = 19, sum = 1095.000000 
+  the average score is: 54.750000 
+ the median score is : 59.500000 
+ the mode score is   : 60 
+ the std is	     : 31.267995 
+
+##############################################################
+
+4. Write a C program for determining the maximum of 10 integers using arrays and/or pointers.
+
+Results of the program ramirez_ques4
+##############################################################
+The maximum is 33 
+##############################################################

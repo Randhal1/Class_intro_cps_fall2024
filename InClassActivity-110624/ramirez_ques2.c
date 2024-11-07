@@ -23,7 +23,6 @@ int ArrayLess(int arr[], int size, int compare)
     return magnitude;
 }
 
-
 // Function to find the minimum value in an array
 int findMinimum(double arr[], int size)
 {
@@ -43,50 +42,34 @@ int findMinimum(double arr[], int size)
     return index;
 }
 
-
-int main()
-    {
-          double number;
-	  double x[20]; 
-          FILE* in_file = fopen("scores-data.txt", "r"); //only open a pre-exisiting file in read mode. 
-         
-          if (! in_file ) // equivalent to saying if ( in_file == NULL ) 
-             {  
-                printf("oops, file can't be read\n"); 
-                exit(-1); 
-             } 
-          // attempt to read the next line and store 
-          // the value in the "number" variable
+int main(){
 	
-	  int i = 0;
-
-	  while ( fscanf(in_file, "%lf", & number ) == 1 )
-             {
-	       x[i] = number;
-               printf("We just read %lf %d \n", x[i], i);
-	       i++;
-             }
-		
-	double avg=0;
+	int x[5];
+	double avg=-5.0;
+	x[0]= 10;
+	x[1]= 7;
+	x[2]= 5;
+	x[3]= 9;
+	x[4]= 10;
 	double sum = 0.0;//sum 41
-	for (int i = 0 ;i < 20; ++i)
+	for (int i = 0 ;i < 5; ++i)
 		{
 		sum +=x[i];
 		printf(" for i = %d, sum = %lf \n ", i, sum );
 			
 		} //End for
 
-	avg = sum/20;
+	avg = sum/5;
 	
-	double std[20];
+	double std[5];
 	sum = 0.0;
-	for (int i = 0; i < 20; ++i)
+	for (int i = 0; i < 5; ++i)
 		{
 		std[i] = pow((x[i]-avg),2);
 		sum +=std[i];
 		}//End for
 	
-	double sstd = sqrt(sum/20);
+	double sstd = sqrt(sum/5);
 
 	// We can define the median as follows:
 	// For any given set with a normal distribution 
@@ -99,20 +82,20 @@ int main()
 	
 	// We can then write the following code
 	
-	int median = x[findMinimum(std,20)];
+	//int median = x[findMinimum(std,5)];//this code needs revision <-- Randhal  
 
-	double collections[20]; 
+	double collections[5]; 
 
-	for (int i = 0; i < 20; ++i)
+	for (int i = 0; i < 5; ++i)
 		{
-		collections[i] = ArrayLess(x, 20, x[i]); 
+		collections[i] = ArrayLess(x, 5, x[i]); 
 		}//End for
 
-	int mode = x[findMinimum(collections, 20)-1];
+	int mode = x[findMinimum(collections, 5)-1];
 
 	// Print the results 
 	printf(" the average score is: %lf \n", avg);
-	printf(" the median score is : %d \n", median);
+	//printf(" the median score is : %d \n", median);
 	printf(" the mode score is : %d \n", mode);
 	printf(" the std is	     : %lf \n", sstd);
 }
