@@ -1,5 +1,6 @@
 #include <stdio.h>
-#include <cblas.h> // This is the C interface for the BLAS library
+#include "cblas.h" // This is the C interface for the BLAS library
+		   // BLAS: Basic Linear Algebra Sub-routine
 
 /*
   int main(int argc, char* argv[])
@@ -10,6 +11,9 @@
   Inputs: none
 
   Outputs: The dot product of the two vectors
+  Usage: 
+  gcc -o ip example-71.c -lbals
+  ./ip
 */
 
 int main(int argc, char* argv[]) 
