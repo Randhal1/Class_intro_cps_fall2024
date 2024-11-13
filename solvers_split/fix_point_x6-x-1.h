@@ -1,7 +1,7 @@
 // Define a fix point iteration method function.
 double fixpoint(double x0){
 
-    double x1 = pow(x0, 6)-1;
+    double x1 = cbrt(sqrt((x0+1)/pow(x0,5)));
 
     int q = 0;
 
@@ -14,7 +14,7 @@ double fixpoint(double x0){
 	}// End if
 	
 	x0 = x1;
-	x1 = pow(x0, 6)-1;
+	x1 = cbrt(sqrt((x0+1)/pow(x0,5)));
 	    
 
     }// End for
