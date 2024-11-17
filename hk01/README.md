@@ -24,8 +24,9 @@
 
 In a list of elements $\delta_{i0}, \delta_{i1},..., \delta_{ij}$ 
 
-## let $\displaystyle {\delta_{ik}}_{k=0}^{j} = \delta_{i0}, \delta_{i1},..., \delta_{ij}$
+## let $\displaystyle \Lambda_{i} = \delta_{i0}+\delta_{i1}+...+\delta_{ij} = \Sigma_{k=0}^j\delta_{ik}$
+### With $i$ being the $i$-th element of the list of unique elements. 
 
 ## Then:
 
-# $Max_{\delta_{ij}} \displaystyle \Sigma_{i = 0}\delta_{ik}$
+# $Max_{\Lambda_{i}} \displaystyle {Lambda_{0},...,Lambda{n}}$
