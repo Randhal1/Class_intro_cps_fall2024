@@ -29,4 +29,4 @@ In a list of elements $\delta_{i0}, \delta_{i1},..., \delta_{ij}$
 
 ## Then:
 
-# $Max_{\Lambda_{i}} \displaystyle \left[\Lambda_{0},...,\Lambda{n}\right]$
+# $Max_{\Lambda_{i}} \displaystyle \left[\Lambda_{0},...,\Lambda_{n}\right]$
