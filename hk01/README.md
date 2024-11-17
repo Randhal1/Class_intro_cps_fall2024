@@ -14,4 +14,4 @@
 
 ## Kronecker-Delta:
 
-# $\displaystyle \delta_{ij} = $ 
+$\displaystyle \delta_{ij} = $ 
