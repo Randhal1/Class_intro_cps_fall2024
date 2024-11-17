@@ -14,4 +14,4 @@
 
 ## Kronecker-Delta:
 
-# $\diplaystyle \delta_{ij} = \left{ $ 
+# $\delta_{ij} = $ 
