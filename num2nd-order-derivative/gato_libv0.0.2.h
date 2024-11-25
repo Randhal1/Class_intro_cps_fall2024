@@ -29,7 +29,7 @@ void diff2(int N, double h, double *arr, double *arr1, double *x, double *error)
 // Also compute the values of y.
 void steps(int N, double *arr, double *arr1) {
 	for(int i=0; i<=N; i++){
-		arr[i] = 2*M_PI/N*i;
+		arr[i] = M_PI/N*i;
 		arr1[i] = sin(arr[i]);
 	} // for loop.
 } // x_intervals.
