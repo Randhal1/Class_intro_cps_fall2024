@@ -6,7 +6,7 @@
 int main(int argc, char* argv[]) {
 	int N = atoi(argv[1]); // Number of intervals.
 	
-	double h = 2*M_PI/N;
+	double h = M_PI/N;
 	double x[N+1]; 	    // string which stores x values.
 	double y[N+1]; 	    // string which stores y values.
 	double dy[N]; 	    // string which stores forward differentiation of y. 
